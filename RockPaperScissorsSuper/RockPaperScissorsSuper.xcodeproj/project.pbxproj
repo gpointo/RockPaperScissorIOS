@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		671D0E59259A95D800CBDC93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D0E58259A95D800CBDC93 /* AppDelegate.swift */; };
+		671D0E5B259A95D800CBDC93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D0E5A259A95D800CBDC93 /* SceneDelegate.swift */; };
+		671D0E5D259A95D800CBDC93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D0E5C259A95D800CBDC93 /* ViewController.swift */; };
+		671D0E60259A95D800CBDC93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671D0E5E259A95D800CBDC93 /* Main.storyboard */; };
+		671D0E62259A95DA00CBDC93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671D0E61259A95DA00CBDC93 /* Assets.xcassets */; };
+		671D0E65259A95DA00CBDC93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671D0E63259A95DA00CBDC93 /* LaunchScreen.storyboard */; };
+		671D0E6A259A95DA00CBDC93 /* RockPaperScissorsSuper WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 671D0E69259A95DA00CBDC93 /* RockPaperScissorsSuper WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		671D0E70259A95DA00CBDC93 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671D0E6E259A95DA00CBDC93 /* Interface.storyboard */; };
+		671D0E72259A95DB00CBDC93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671D0E71259A95DB00CBDC93 /* Assets.xcassets */; };
+		671D0E79259A95DB00CBDC93 /* RockPaperScissorsSuper WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 671D0E78259A95DB00CBDC93 /* RockPaperScissorsSuper WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		671D0E7E259A95DB00CBDC93 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D0E7D259A95DB00CBDC93 /* InterfaceController.swift */; };
+		671D0E80259A95DB00CBDC93 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D0E7F259A95DB00CBDC93 /* ExtensionDelegate.swift */; };
+		671D0E82259A95DB00CBDC93 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D0E81259A95DB00CBDC93 /* NotificationController.swift */; };
+		671D0E84259A95DB00CBDC93 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D0E83259A95DB00CBDC93 /* ComplicationController.swift */; };
+		671D0E86259A95DC00CBDC93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671D0E85259A95DC00CBDC93 /* Assets.xcassets */; };
+		67869F38259B7E6F00A63455 /* ResultsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67869F37259B7E6F00A63455 /* ResultsInterfaceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		671D0E6B259A95DA00CBDC93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 671D0E4D259A95D800CBDC93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 671D0E68259A95DA00CBDC93;
+			remoteInfo = "RockPaperScissorsSuper WatchKit App";
+		};
+		671D0E7A259A95DB00CBDC93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 671D0E4D259A95D800CBDC93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 671D0E77259A95DB00CBDC93;
+			remoteInfo = "RockPaperScissorsSuper WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		671D0E8E259A95DC00CBDC93 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				671D0E79259A95DB00CBDC93 /* RockPaperScissorsSuper WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671D0E92259A95DC00CBDC93 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				671D0E6A259A95DA00CBDC93 /* RockPaperScissorsSuper WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		671D0E55259A95D800CBDC93 /* RockPaperScissorsSuper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissorsSuper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		671D0E58259A95D800CBDC93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		671D0E5A259A95D800CBDC93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		671D0E5C259A95D800CBDC93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		671D0E5F259A95D800CBDC93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		671D0E61259A95DA00CBDC93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		671D0E64259A95DA00CBDC93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		671D0E66259A95DA00CBDC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		671D0E69259A95DA00CBDC93 /* RockPaperScissorsSuper WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RockPaperScissorsSuper WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		671D0E6F259A95DA00CBDC93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		671D0E71259A95DB00CBDC93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		671D0E73259A95DB00CBDC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		671D0E78259A95DB00CBDC93 /* RockPaperScissorsSuper WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RockPaperScissorsSuper WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		671D0E7D259A95DB00CBDC93 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		671D0E7F259A95DB00CBDC93 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		671D0E81259A95DB00CBDC93 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		671D0E83259A95DB00CBDC93 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		671D0E85259A95DC00CBDC93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		671D0E87259A95DC00CBDC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		671D0E88259A95DC00CBDC93 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		67869F37259B7E6F00A63455 /* ResultsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsInterfaceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		671D0E52259A95D800CBDC93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671D0E75259A95DB00CBDC93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		671D0E4C259A95D800CBDC93 = {
+			isa = PBXGroup;
+			children = (
+				671D0E57259A95D800CBDC93 /* RockPaperScissorsSuper */,
+				671D0E6D259A95DA00CBDC93 /* RockPaperScissorsSuper WatchKit App */,
+				671D0E7C259A95DB00CBDC93 /* RockPaperScissorsSuper WatchKit Extension */,
+				671D0E56259A95D800CBDC93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		671D0E56259A95D800CBDC93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				671D0E55259A95D800CBDC93 /* RockPaperScissorsSuper.app */,
+				671D0E69259A95DA00CBDC93 /* RockPaperScissorsSuper WatchKit App.app */,
+				671D0E78259A95DB00CBDC93 /* RockPaperScissorsSuper WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		671D0E57259A95D800CBDC93 /* RockPaperScissorsSuper */ = {
+			isa = PBXGroup;
+			children = (
+				671D0E58259A95D800CBDC93 /* AppDelegate.swift */,
+				671D0E5A259A95D800CBDC93 /* SceneDelegate.swift */,
+				671D0E5C259A95D800CBDC93 /* ViewController.swift */,
+				671D0E5E259A95D800CBDC93 /* Main.storyboard */,
+				671D0E61259A95DA00CBDC93 /* Assets.xcassets */,
+				671D0E63259A95DA00CBDC93 /* LaunchScreen.storyboard */,
+				671D0E66259A95DA00CBDC93 /* Info.plist */,
+			);
+			path = RockPaperScissorsSuper;
+			sourceTree = "<group>";
+		};
+		671D0E6D259A95DA00CBDC93 /* RockPaperScissorsSuper WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				671D0E6E259A95DA00CBDC93 /* Interface.storyboard */,
+				671D0E71259A95DB00CBDC93 /* Assets.xcassets */,
+				671D0E73259A95DB00CBDC93 /* Info.plist */,
+			);
+			path = "RockPaperScissorsSuper WatchKit App";
+			sourceTree = "<group>";
+		};
+		671D0E7C259A95DB00CBDC93 /* RockPaperScissorsSuper WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				671D0E7D259A95DB00CBDC93 /* InterfaceController.swift */,
+				67869F37259B7E6F00A63455 /* ResultsInterfaceController.swift */,
+				671D0E7F259A95DB00CBDC93 /* ExtensionDelegate.swift */,
+				671D0E81259A95DB00CBDC93 /* NotificationController.swift */,
+				671D0E83259A95DB00CBDC93 /* ComplicationController.swift */,
+				671D0E85259A95DC00CBDC93 /* Assets.xcassets */,
+				671D0E87259A95DC00CBDC93 /* Info.plist */,
+				671D0E88259A95DC00CBDC93 /* PushNotificationPayload.apns */,
+			);
+			path = "RockPaperScissorsSuper WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		671D0E54259A95D800CBDC93 /* RockPaperScissorsSuper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 671D0E93259A95DC00CBDC93 /* Build configuration list for PBXNativeTarget "RockPaperScissorsSuper" */;
+			buildPhases = (
+				671D0E51259A95D800CBDC93 /* Sources */,
+				671D0E52259A95D800CBDC93 /* Frameworks */,
+				671D0E53259A95D800CBDC93 /* Resources */,
+				671D0E92259A95DC00CBDC93 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				671D0E6C259A95DA00CBDC93 /* PBXTargetDependency */,
+			);
+			name = RockPaperScissorsSuper;
+			productName = RockPaperScissorsSuper;
+			productReference = 671D0E55259A95D800CBDC93 /* RockPaperScissorsSuper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		671D0E68259A95DA00CBDC93 /* RockPaperScissorsSuper WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 671D0E8F259A95DC00CBDC93 /* Build configuration list for PBXNativeTarget "RockPaperScissorsSuper WatchKit App" */;
+			buildPhases = (
+				671D0E67259A95DA00CBDC93 /* Resources */,
+				671D0E8E259A95DC00CBDC93 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				671D0E7B259A95DB00CBDC93 /* PBXTargetDependency */,
+			);
+			name = "RockPaperScissorsSuper WatchKit App";
+			productName = "RockPaperScissorsSuper WatchKit App";
+			productReference = 671D0E69259A95DA00CBDC93 /* RockPaperScissorsSuper WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		671D0E77259A95DB00CBDC93 /* RockPaperScissorsSuper WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 671D0E8B259A95DC00CBDC93 /* Build configuration list for PBXNativeTarget "RockPaperScissorsSuper WatchKit Extension" */;
+			buildPhases = (
+				671D0E74259A95DB00CBDC93 /* Sources */,
+				671D0E75259A95DB00CBDC93 /* Frameworks */,
+				671D0E76259A95DB00CBDC93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RockPaperScissorsSuper WatchKit Extension";
+			productName = "RockPaperScissorsSuper WatchKit Extension";
+			productReference = 671D0E78259A95DB00CBDC93 /* RockPaperScissorsSuper WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		671D0E4D259A95D800CBDC93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					671D0E54259A95D800CBDC93 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					671D0E68259A95DA00CBDC93 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					671D0E77259A95DB00CBDC93 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 671D0E50259A95D800CBDC93 /* Build configuration list for PBXProject "RockPaperScissorsSuper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 671D0E4C259A95D800CBDC93;
+			productRefGroup = 671D0E56259A95D800CBDC93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				671D0E54259A95D800CBDC93 /* RockPaperScissorsSuper */,
+				671D0E68259A95DA00CBDC93 /* RockPaperScissorsSuper WatchKit App */,
+				671D0E77259A95DB00CBDC93 /* RockPaperScissorsSuper WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		671D0E53259A95D800CBDC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671D0E65259A95DA00CBDC93 /* LaunchScreen.storyboard in Resources */,
+				671D0E62259A95DA00CBDC93 /* Assets.xcassets in Resources */,
+				671D0E60259A95D800CBDC93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671D0E67259A95DA00CBDC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671D0E72259A95DB00CBDC93 /* Assets.xcassets in Resources */,
+				671D0E70259A95DA00CBDC93 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671D0E76259A95DB00CBDC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671D0E86259A95DC00CBDC93 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		671D0E51259A95D800CBDC93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671D0E5D259A95D800CBDC93 /* ViewController.swift in Sources */,
+				671D0E59259A95D800CBDC93 /* AppDelegate.swift in Sources */,
+				671D0E5B259A95D800CBDC93 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671D0E74259A95DB00CBDC93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67869F38259B7E6F00A63455 /* ResultsInterfaceController.swift in Sources */,
+				671D0E82259A95DB00CBDC93 /* NotificationController.swift in Sources */,
+				671D0E84259A95DB00CBDC93 /* ComplicationController.swift in Sources */,
+				671D0E80259A95DB00CBDC93 /* ExtensionDelegate.swift in Sources */,
+				671D0E7E259A95DB00CBDC93 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		671D0E6C259A95DA00CBDC93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 671D0E68259A95DA00CBDC93 /* RockPaperScissorsSuper WatchKit App */;
+			targetProxy = 671D0E6B259A95DA00CBDC93 /* PBXContainerItemProxy */;
+		};
+		671D0E7B259A95DB00CBDC93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 671D0E77259A95DB00CBDC93 /* RockPaperScissorsSuper WatchKit Extension */;
+			targetProxy = 671D0E7A259A95DB00CBDC93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		671D0E5E259A95D800CBDC93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				671D0E5F259A95D800CBDC93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		671D0E63259A95DA00CBDC93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				671D0E64259A95DA00CBDC93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		671D0E6E259A95DA00CBDC93 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				671D0E6F259A95DA00CBDC93 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		671D0E89259A95DC00CBDC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		671D0E8A259A95DC00CBDC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		671D0E8C259A95DC00CBDC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RockPaperScissorsSuper WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gio.RockPaperScissorsSuper.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		671D0E8D259A95DC00CBDC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RockPaperScissorsSuper WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gio.RockPaperScissorsSuper.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		671D0E90259A95DC00CBDC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = RockPaperScissorsSuper_WatchKit_Extension;
+				INFOPLIST_FILE = "RockPaperScissorsSuper WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gio.RockPaperScissorsSuper.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		671D0E91259A95DC00CBDC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = RockPaperScissorsSuper_WatchKit_Extension;
+				INFOPLIST_FILE = "RockPaperScissorsSuper WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gio.RockPaperScissorsSuper.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		671D0E94259A95DC00CBDC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54CSWQHQ2D;
+				INFOPLIST_FILE = RockPaperScissorsSuper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gio.RockPaperScissorsSuper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		671D0E95259A95DC00CBDC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54CSWQHQ2D;
+				INFOPLIST_FILE = RockPaperScissorsSuper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gio.RockPaperScissorsSuper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		671D0E50259A95D800CBDC93 /* Build configuration list for PBXProject "RockPaperScissorsSuper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				671D0E89259A95DC00CBDC93 /* Debug */,
+				671D0E8A259A95DC00CBDC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		671D0E8B259A95DC00CBDC93 /* Build configuration list for PBXNativeTarget "RockPaperScissorsSuper WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				671D0E8C259A95DC00CBDC93 /* Debug */,
+				671D0E8D259A95DC00CBDC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		671D0E8F259A95DC00CBDC93 /* Build configuration list for PBXNativeTarget "RockPaperScissorsSuper WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				671D0E90259A95DC00CBDC93 /* Debug */,
+				671D0E91259A95DC00CBDC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		671D0E93259A95DC00CBDC93 /* Build configuration list for PBXNativeTarget "RockPaperScissorsSuper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				671D0E94259A95DC00CBDC93 /* Debug */,
+				671D0E95259A95DC00CBDC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 671D0E4D259A95D800CBDC93 /* Project object */;
+}

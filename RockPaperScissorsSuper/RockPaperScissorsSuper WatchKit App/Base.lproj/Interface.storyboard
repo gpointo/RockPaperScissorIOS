@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="Main" title="Main" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RockPaperScissorsSuper_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="151" height="151" alignment="left" alpha="0.94999999999999996" backgroundImage="Apple Watch 38mm" contentMode="redraw" layout="vertical" id="dUh-M2-sto">
+                            <items>
+                                <group width="1" height="73" alignment="left" verticalAlignment="center" layout="vertical" id="zOt-aj-duV">
+                                    <items>
+                                        <label alignment="center" text="Choose One:" id="zYj-RB-RTe">
+                                            <fontDescription key="font" type="system" pointSize="20"/>
+                                        </label>
+                                        <group alignment="center" verticalAlignment="center" id="YVA-SG-o69">
+                                            <items>
+                                                <button width="0.29999999999999999" alignment="center" title="✊" id="oLR-WO-U7L">
+                                                    <connections>
+                                                        <action selector="choseRock" destination="AgC-eL-Hgc" id="3YI-w3-AAU"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.29999999999999999" alignment="center" title="🖐" id="HP8-yf-HWB">
+                                                    <connections>
+                                                        <action selector="chosePaper" destination="AgC-eL-Hgc" id="PMP-v6-GkW"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.29999999999999999" alignment="center" title="✌️" id="yDv-mV-EoT">
+                                                    <connections>
+                                                        <action selector="choseScissors" destination="AgC-eL-Hgc" id="vpb-vI-XOM"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Result-->
+        <scene sceneID="KoD-FQ-hbR">
+            <objects>
+                <controller identifier="Result" title="Result" id="E5m-xh-UPx" customClass="ResultsInterfaceController" customModule="RockPaperScissorsSuper_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="150" alignment="left" backgroundImage="win" layout="vertical" id="fTs-HR-egW">
+                            <items>
+                                <group width="1" height="0.59999999999999998" alignment="left" layout="vertical" id="JEI-y7-Bd5">
+                                    <items>
+                                        <group width="0.80000000000000004" height="0.29999999999999999" alignment="center" verticalAlignment="bottom" id="epb-6l-qqy">
+                                            <items>
+                                                <label alignment="left" text="You" id="6cb-4s-yjI"/>
+                                                <label alignment="right" text="CPU" id="sNE-k8-CBd"/>
+                                            </items>
+                                        </group>
+                                        <separator width="0.90000000000000002" alignment="center" verticalAlignment="bottom" id="KSg-Z3-8fL"/>
+                                        <group width="0.84999999999999998" alignment="center" verticalAlignment="bottom" id="WL0-lu-lWh">
+                                            <items>
+                                                <label alignment="left" text="✊" id="WpS-Xe-n14">
+                                                    <fontDescription key="font" type="system" pointSize="25"/>
+                                                </label>
+                                                <label alignment="right" text="✌️" id="yMb-iK-feu">
+                                                    <fontDescription key="font" type="system" pointSize="25"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <label width="1" alignment="center" verticalAlignment="center" text="You Win" textAlignment="center" id="C2c-FV-nTQ">
+                                    <fontDescription key="font" type="system" pointSize="30"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="CPUchoiceLable" destination="yMb-iK-feu" id="dAL-ef-XAO"/>
+                        <outlet property="ResultLable" destination="C2c-FV-nTQ" id="w0n-fs-c55"/>
+                        <outlet property="bgGroup" destination="fTs-HR-egW" id="fH9-ZQ-zYh"/>
+                        <outlet property="playerChoiceLable" destination="WpS-Xe-n14" id="6Jc-qW-xqa"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="544" y="345"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Apple Watch 38mm" width="272" height="340"/>
+        <image name="win" width="272" height="340"/>
+    </resources>
+</document>
